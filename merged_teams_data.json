@@ -1,0 +1,769 @@
+{
+    "AG": {
+        "avg_rating": 175.93,
+        "map_win_rate": {
+            "Bind": 33,
+            "Haven": 39,
+            "Split": 50,
+            "Ascent": 36,
+            "Icebox": 25,
+            "Breeze": 36,
+            "Fracture": 33,
+            "Pearl": 10,
+            "Lotus": 46,
+            "Sunset": 29,
+            "Abyss": 29
+        }
+    },
+    "BLG": {
+        "avg_rating": 191.2,
+        "map_win_rate": {
+            "Bind": 52,
+            "Haven": 41,
+            "Split": 53,
+            "Ascent": 70,
+            "Icebox": 59,
+            "Breeze": 20,
+            "Fracture": 50,
+            "Pearl": 56,
+            "Lotus": 59,
+            "Sunset": 45,
+            "Abyss": 71
+        }
+    },
+    "EDG": {
+        "avg_rating": 199.61,
+        "map_win_rate": {
+            "Bind": 67,
+            "Haven": 61,
+            "Split": 65,
+            "Ascent": 62,
+            "Icebox": 67,
+            "Breeze": 74,
+            "Fracture": 68,
+            "Pearl": 46,
+            "Lotus": 62,
+            "Sunset": 69,
+            "Abyss": 71
+        }
+    },
+    "FPX": {
+        "avg_rating": 215.05,
+        "map_win_rate": {
+            "Bind": 37,
+            "Haven": 45,
+            "Split": 50,
+            "Ascent": 59,
+            "Icebox": 54,
+            "Breeze": 44,
+            "Fracture": 50,
+            "Pearl": 71,
+            "Lotus": 60,
+            "Sunset": 50,
+            "Abyss": 44
+        }
+    },
+    "JDG": {
+        "avg_rating": 200.8,
+        "map_win_rate": {
+            "Bind": 44,
+            "Haven": 45,
+            "Split": 50,
+            "Ascent": 40,
+            "Icebox": 63,
+            "Breeze": 0,
+            "Fracture": 100,
+            "Pearl": 60,
+            "Lotus": 33,
+            "Sunset": 36,
+            "Abyss": 43
+        }
+    },
+    "NOVA": {
+        "avg_rating": 198.39,
+        "map_win_rate": {
+            "Bind": 45,
+            "Haven": 22,
+            "Split": 57,
+            "Ascent": 52,
+            "Icebox": 60,
+            "Breeze": 0,
+            "Fracture": 50,
+            "Pearl": 27,
+            "Lotus": 28,
+            "Sunset": 59,
+            "Abyss": 82
+        }
+    },
+    "TE": {
+        "avg_rating": 193.63,
+        "map_win_rate": {
+            "Bind": 48,
+            "Haven": 52,
+            "Split": 60,
+            "Ascent": 58,
+            "Icebox": 0,
+            "Breeze": 29,
+            "Fracture": 0,
+            "Pearl": 63,
+            "Lotus": 54,
+            "Sunset": 52,
+            "Abyss": 27
+        }
+    },
+    "TEC": {
+        "avg_rating": 209.08,
+        "map_win_rate": {
+            "Bind": 50,
+            "Haven": 29,
+            "Split": 50,
+            "Ascent": 13,
+            "Icebox": 25,
+            "Breeze": 40,
+            "Fracture": 25,
+            "Pearl": 40,
+            "Lotus": 54,
+            "Sunset": 38,
+            "Abyss": 33
+        }
+    },
+    "TYL": {
+        "avg_rating": 204.4,
+        "map_win_rate": {
+            "Bind": 61,
+            "Haven": 44,
+            "Split": 41,
+            "Ascent": 42,
+            "Icebox": 35,
+            "Breeze": 10,
+            "Fracture": 29,
+            "Pearl": 45,
+            "Lotus": 33,
+            "Sunset": 20,
+            "Abyss": 33
+        }
+    },
+    "WOL": {
+        "avg_rating": 195.09,
+        "map_win_rate": {
+            "Bind": 36,
+            "Haven": 100,
+            "Split": 36,
+            "Ascent": 64,
+            "Icebox": 67,
+            "Breeze": 50,
+            "Fracture": 50,
+            "Pearl": 80,
+            "Lotus": 29,
+            "Sunset": 45,
+            "Abyss": 50
+        }
+    },
+    "DRG": {
+        "avg_rating": 200.13,
+        "map_win_rate": {
+            "Bind": 57,
+            "Haven": 52,
+            "Split": 36,
+            "Ascent": 55,
+            "Icebox": 57,
+            "Breeze": 40,
+            "Fracture": 33,
+            "Pearl": 53,
+            "Lotus": 43,
+            "Sunset": 22,
+            "Abyss": 75
+        }
+    },
+    "XLG": {
+        "avg_rating": 197.45,
+        "map_win_rate": {
+            "Bind": 67,
+            "Haven": 56,
+            "Split": 33,
+            "Ascent": 67,
+            "Icebox": 75,
+            "Breeze": 0,
+            "Fracture": 0,
+            "Pearl": 50,
+            "Lotus": 56,
+            "Sunset": 71,
+            "Abyss": 33
+        }
+    },
+    "BBL": {
+        "avg_rating": 193.98,
+        "map_win_rate": {
+            "Bind": 58,
+            "Haven": 72,
+            "Split": 49,
+            "Ascent": 63,
+            "Icebox": 45,
+            "Breeze": 42,
+            "Fracture": 38,
+            "Pearl": 38,
+            "Lotus": 25,
+            "Sunset": 38,
+            "Abyss": 100
+        }
+    },
+    "FNC": {
+        "avg_rating": 194.12,
+        "map_win_rate": {
+            "Bind": 74,
+            "Haven": 68,
+            "Split": 60,
+            "Ascent": 58,
+            "Icebox": 73,
+            "Breeze": 61,
+            "Fracture": 65,
+            "Pearl": 60,
+            "Lotus": 74,
+            "Sunset": 50,
+            "Abyss": 25
+        }
+    },
+    "FUT": {
+        "avg_rating": 204.98,
+        "map_win_rate": {
+            "Bind": 57,
+            "Haven": 60,
+            "Split": 62,
+            "Ascent": 69,
+            "Icebox": 58,
+            "Breeze": 56,
+            "Fracture": 35,
+            "Pearl": 67,
+            "Lotus": 60,
+            "Sunset": 50,
+            "Abyss": 33
+        }
+    },
+    "GX": {
+        "avg_rating": 190.28,
+        "map_win_rate": {
+            "Bind": 25,
+            "Haven": 33,
+            "Split": 13,
+            "Ascent": 67,
+            "Icebox": 33,
+            "Breeze": 50,
+            "Fracture": 50,
+            "Pearl": 0,
+            "Lotus": 57,
+            "Sunset": 56,
+            "Abyss": 0
+        }
+    },
+    "KC": {
+        "avg_rating": 180.3,
+        "map_win_rate": {
+            "Bind": 76,
+            "Haven": 36,
+            "Split": 38,
+            "Ascent": 29,
+            "Icebox": 40,
+            "Breeze": 33,
+            "Fracture": 50,
+            "Pearl": 50,
+            "Lotus": 57,
+            "Sunset": 50,
+            "Abyss": 0
+        }
+    },
+    "KOI": {
+        "avg_rating": 187.37,
+        "map_win_rate": {
+            "Bind": 54,
+            "Haven": 35,
+            "Split": 67,
+            "Ascent": 55,
+            "Icebox": 46,
+            "Breeze": 44,
+            "Fracture": 38,
+            "Pearl": 20,
+            "Lotus": 40,
+            "Sunset": 25,
+            "Abyss": 0
+        }
+    },
+    "NAVI": {
+        "avg_rating": 193.24,
+        "map_win_rate": {
+            "Bind": 47,
+            "Haven": 43,
+            "Split": 56,
+            "Ascent": 63,
+            "Icebox": 50,
+            "Breeze": 39,
+            "Fracture": 72,
+            "Pearl": 85,
+            "Lotus": 32,
+            "Sunset": 43,
+            "Abyss": 100
+        }
+    },
+    "TH": {
+        "avg_rating": 196.83,
+        "map_win_rate": {
+            "Bind": 68,
+            "Haven": 73,
+            "Split": 62,
+            "Ascent": 66,
+            "Icebox": 56,
+            "Breeze": 48,
+            "Fracture": 25,
+            "Pearl": 56,
+            "Lotus": 59,
+            "Sunset": 78,
+            "Abyss": 31
+        }
+    },
+    "TL": {
+        "avg_rating": 200.76,
+        "map_win_rate": {
+            "Bind": 74,
+            "Haven": 69,
+            "Split": 85,
+            "Ascent": 72,
+            "Icebox": 72,
+            "Breeze": 67,
+            "Fracture": 66,
+            "Pearl": 83,
+            "Lotus": 73,
+            "Sunset": 73,
+            "Abyss": 67
+        }
+    },
+    "VIT": {
+        "avg_rating": 212.11,
+        "map_win_rate": {
+            "Bind": 47,
+            "Haven": 53,
+            "Split": 60,
+            "Ascent": 62,
+            "Icebox": 72,
+            "Breeze": 74,
+            "Fracture": 68,
+            "Pearl": 43,
+            "Lotus": 52,
+            "Sunset": 63,
+            "Abyss": 67
+        }
+    },
+    "M8": {
+        "avg_rating": 189.2,
+        "map_win_rate": {
+            "Bind": 25,
+            "Haven": 90,
+            "Split": 69,
+            "Ascent": 70,
+            "Icebox": 50,
+            "Breeze": 33,
+            "Fracture": 57,
+            "Pearl": 60,
+            "Lotus": 40,
+            "Sunset": 33,
+            "Abyss": 67
+        }
+    },
+    "APK": {
+        "avg_rating": 190.27,
+        "map_win_rate": {
+            "Bind": 40,
+            "Haven": 75,
+            "Split": 50,
+            "Ascent": 90,
+            "Icebox": 90,
+            "Breeze": 67,
+            "Fracture": 33,
+            "Pearl": 73,
+            "Lotus": 85,
+            "Sunset": 79,
+            "Abyss": 60
+        }
+    },
+    "DFM": {
+        "avg_rating": 196.11,
+        "map_win_rate": {
+            "Bind": 50,
+            "Haven": 32,
+            "Split": 62,
+            "Ascent": 43,
+            "Icebox": 9,
+            "Breeze": 70,
+            "Fracture": 29,
+            "Pearl": 22,
+            "Lotus": 13,
+            "Sunset": 38,
+            "Abyss": 63
+        }
+    },
+    "DRX": {
+        "avg_rating": 201.02,
+        "map_win_rate": {
+            "Bind": 55,
+            "Haven": 69,
+            "Split": 68,
+            "Ascent": 70,
+            "Icebox": 60,
+            "Breeze": 74,
+            "Fracture": 70,
+            "Pearl": 53,
+            "Lotus": 46,
+            "Sunset": 33,
+            "Abyss": 85
+        }
+    },
+    "GEN": {
+        "avg_rating": 199.33,
+        "map_win_rate": {
+            "Bind": 64,
+            "Haven": 65,
+            "Split": 56,
+            "Ascent": 61,
+            "Icebox": 52,
+            "Breeze": 66,
+            "Fracture": 57,
+            "Pearl": 43,
+            "Lotus": 59,
+            "Sunset": 42,
+            "Abyss": 50
+        }
+    },
+    "GE": {
+        "avg_rating": 174.07,
+        "map_win_rate": {
+            "Bind": 65,
+            "Haven": 62,
+            "Split": 64,
+            "Ascent": 69,
+            "Icebox": 63,
+            "Breeze": 57,
+            "Fracture": 63,
+            "Pearl": 67,
+            "Lotus": 36,
+            "Sunset": 43,
+            "Abyss": 0
+        }
+    },
+    "PRX": {
+        "avg_rating": 205.41,
+        "map_win_rate": {
+            "Bind": 64,
+            "Haven": 69,
+            "Split": 67,
+            "Ascent": 59,
+            "Icebox": 70,
+            "Breeze": 59,
+            "Fracture": 79,
+            "Pearl": 77,
+            "Lotus": 55,
+            "Sunset": 84,
+            "Abyss": 50
+        }
+    },
+    "RRQ": {
+        "avg_rating": 201.91,
+        "map_win_rate": {
+            "Bind": 59,
+            "Haven": 59,
+            "Split": 63,
+            "Ascent": 50,
+            "Icebox": 43,
+            "Breeze": 43,
+            "Fracture": 71,
+            "Pearl": 50,
+            "Lotus": 15,
+            "Sunset": 40,
+            "Abyss": 67
+        }
+    },
+    "T1": {
+        "avg_rating": 202.69,
+        "map_win_rate": {
+            "Bind": 58,
+            "Haven": 59,
+            "Split": 56,
+            "Ascent": 70,
+            "Icebox": 73,
+            "Breeze": 78,
+            "Fracture": 50,
+            "Pearl": 44,
+            "Lotus": 58,
+            "Sunset": 36,
+            "Abyss": 33
+        }
+    },
+    "TLN": {
+        "avg_rating": 192.08,
+        "map_win_rate": {
+            "Bind": 71,
+            "Haven": 41,
+            "Split": 40,
+            "Ascent": 33,
+            "Icebox": 47,
+            "Breeze": 67,
+            "Fracture": 57,
+            "Pearl": 50,
+            "Lotus": 55,
+            "Sunset": 38,
+            "Abyss": 50
+        }
+    },
+    "TS": {
+        "avg_rating": 198.17,
+        "map_win_rate": {
+            "Bind": 55,
+            "Haven": 64,
+            "Split": 46,
+            "Ascent": 61,
+            "Icebox": 56,
+            "Breeze": 54,
+            "Fracture": 42,
+            "Pearl": 17,
+            "Lotus": 38,
+            "Sunset": 78,
+            "Abyss": 33
+        }
+    },
+    "ZETA": {
+        "avg_rating": 175.31,
+        "map_win_rate": {
+            "Bind": 54,
+            "Haven": 55,
+            "Split": 65,
+            "Ascent": 40,
+            "Icebox": 55,
+            "Breeze": 64,
+            "Fracture": 58,
+            "Pearl": 33,
+            "Lotus": 53,
+            "Sunset": 45,
+            "Abyss": 0
+        }
+    },
+    "NS": {
+        "avg_rating": 198.2,
+        "map_win_rate": {
+            "Bind": 67,
+            "Haven": 70,
+            "Split": 53,
+            "Ascent": 63,
+            "Icebox": 20,
+            "Breeze": 0,
+            "Fracture": 0,
+            "Pearl": 67,
+            "Lotus": 56,
+            "Sunset": 69,
+            "Abyss": 33
+        }
+    },
+    "BME": {
+        "avg_rating": 188.33,
+        "map_win_rate": {
+            "Bind": 60,
+            "Haven": 57,
+            "Split": 67,
+            "Ascent": 71,
+            "Icebox": 72,
+            "Breeze": 70,
+            "Fracture": 54,
+            "Pearl": 60,
+            "Lotus": 81,
+            "Sunset": 67,
+            "Abyss": 80
+        }
+    },
+    "100T": {
+        "avg_rating": 197.26,
+        "map_win_rate": {
+            "Bind": 59,
+            "Haven": 59,
+            "Split": 57,
+            "Ascent": 59,
+            "Icebox": 64,
+            "Breeze": 66,
+            "Fracture": 64,
+            "Pearl": 63,
+            "Lotus": 36,
+            "Sunset": 14,
+            "Abyss": 0
+        }
+    },
+    "C9": {
+        "avg_rating": 198.39,
+        "map_win_rate": {
+            "Bind": 48,
+            "Haven": 62,
+            "Split": 60,
+            "Ascent": 66,
+            "Icebox": 66,
+            "Breeze": 71,
+            "Fracture": 55,
+            "Pearl": 63,
+            "Lotus": 63,
+            "Sunset": 79,
+            "Abyss": 43
+        }
+    },
+    "EG": {
+        "avg_rating": 198.01,
+        "map_win_rate": {
+            "Bind": 60,
+            "Haven": 42,
+            "Split": 58,
+            "Ascent": 58,
+            "Icebox": 66,
+            "Breeze": 48,
+            "Fracture": 70,
+            "Pearl": 50,
+            "Lotus": 39,
+            "Sunset": 50,
+            "Abyss": 60
+        }
+    },
+    "FUR": {
+        "avg_rating": 188.53,
+        "map_win_rate": {
+            "Bind": 58,
+            "Haven": 59,
+            "Split": 50,
+            "Ascent": 63,
+            "Icebox": 54,
+            "Breeze": 50,
+            "Fracture": 50,
+            "Pearl": 50,
+            "Lotus": 33,
+            "Sunset": 43,
+            "Abyss": 40
+        }
+    },
+    "KR\u813a": {
+        "avg_rating": 199.22,
+        "map_win_rate": {
+            "Bind": 76,
+            "Haven": 58,
+            "Split": 63,
+            "Ascent": 57,
+            "Icebox": 58,
+            "Breeze": 65,
+            "Fracture": 27,
+            "Pearl": 25,
+            "Lotus": 47,
+            "Sunset": 40,
+            "Abyss": 56}
+    },
+    "LEV": {
+        "avg_rating": 184.59,
+        "map_win_rate": {
+            "Bind": 42,
+            "Haven": 60,
+            "Split": 41,
+            "Ascent": 53,
+            "Icebox": 74,
+            "Breeze": 57,
+            "Fracture": 50,
+            "Pearl": 75,
+            "Lotus": 55,
+            "Sunset": 69,
+            "Abyss": 80
+        }
+    },
+    "LOUD": {
+        "avg_rating": 195.04,
+        "map_win_rate": {
+            "Bind": 63,
+            "Haven": 82,
+            "Split": 64,
+            "Ascent": 70,
+            "Icebox": 64,
+            "Breeze": 85,
+            "Fracture": 56,
+            "Pearl": 47,
+            "Lotus": 47,
+            "Sunset": 50,
+            "Abyss": 0
+        }
+    },
+    "MIBR": {
+        "avg_rating": 199.62,
+        "map_win_rate": {
+            "Bind": 48,
+            "Haven": 50,
+            "Split": 50,
+            "Ascent": 48,
+            "Icebox": 50,
+            "Breeze": 44,
+            "Fracture": 47,
+            "Pearl": 50,
+            "Lotus": 41,
+            "Sunset": 33,
+            "Abyss": 86
+        }
+    },
+    "NRG": {
+        "avg_rating": 212.63,
+        "map_win_rate": {
+            "Bind": 64,
+            "Haven": 74,
+            "Split": 59,
+            "Ascent": 56,
+            "Icebox": 67,
+            "Breeze": 73,
+            "Fracture": 45,
+            "Pearl": 64,
+            "Lotus": 38,
+            "Sunset": 40,
+            "Abyss": 50
+        }
+    },
+    "SEN": {
+        "avg_rating": 201.22,
+        "map_win_rate": {
+            "Bind": 67,
+            "Haven": 70,
+            "Split": 69,
+            "Ascent": 60,
+            "Icebox": 60,
+            "Breeze": 62,
+            "Fracture": 55,
+            "Pearl": 55,
+            "Lotus": 65,
+            "Sunset": 74,
+            "Abyss": 43
+        }
+    },
+    "G2": {
+        "avg_rating": 202.25,
+        "map_win_rate": {
+            "Bind": 48,
+            "Haven": 43,
+            "Split": 64,
+            "Ascent": 61,
+            "Icebox": 48,
+            "Breeze": 50,
+            "Fracture": 33,
+            "Pearl": 67,
+            "Lotus": 69,
+            "Sunset": 36,
+            "Abyss": 71
+        }
+    },
+    "2G": {
+        "avg_rating": 183.23,
+        "map_win_rate": {
+            "Bind": 64,
+            "Haven": 50,
+            "Split": 70,
+            "Ascent": 58,
+            "Icebox": 62,
+            "Breeze": 50,
+            "Fracture": 0,
+            "Pearl": 0,
+            "Lotus": 63,
+            "Sunset": 54,
+            "Abyss": 40
+        }
+    }
+}
