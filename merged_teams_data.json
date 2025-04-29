@@ -119,7 +119,7 @@
             "Split": 50,
             "Ascent": 13,
             "Icebox": 25,
-            "Breeze": 40,
+            "Breeze": 100,
             "Fracture": 25,
             "Pearl": 40,
             "Lotus": 54,
@@ -639,7 +639,7 @@
             "Abyss": 40
         }
     },
-    "KR\u813a": {
+    "KRU": {
         "avg_rating": 199.22,
         "map_win_rate": {
             "Bind": 76,

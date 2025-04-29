@@ -4,11 +4,11 @@
 @author: JunLeon
 @time: 2025-03-11
 """
-
+import joblib
 import streamlit as st
 import numpy as np
 import json
-import pickle
+import torch
 import os
 import base64
 from sklearn.preprocessing import StandardScaler
@@ -44,25 +44,49 @@ def set_background_image(image_url, opacity):
 
 
 # ============================================
+# PyTorch模型定义（必须与训练时完全一致）
+# ============================================
+
+class WinPredictor(torch.nn.Module):
+    def __init__(self, input_dim):
+        super().__init__()
+        self.net = torch.nn.Sequential(
+            torch.nn.Linear(input_dim, 8),
+            torch.nn.ReLU(),
+            torch.nn.Linear(8, 1),
+            torch.nn.Sigmoid()
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+# ============================================
 # 数据加载函数 (使用缓存提高性能)
 # ============================================
 
 @st.cache_resource
 def load_model_and_scaler():
-    """加载模型和特征缩放器"""
+    """加载PyTorch模型和特征缩放器"""
     try:
-        if not os.path.exists('model.pkl') or not os.path.exists('scaler.pkl'):
-            raise FileNotFoundError("模型或scaler文件未找到")
+        # 加载模型
+        model = WinPredictor(input_dim=3)  # 根据实际特征维度修改
+        if os.path.exists('win_predictor.pth'):
+            model.load_state_dict(torch.load('win_predictor.pth'))
+        else:
+            raise FileNotFoundError("模型文件未找到")
 
-        with open('model.pkl', 'rb') as f:
-            model = pickle.load(f)
+        # 加载标准化器
+        if os.path.exists('scaler.pkl'):
+            scaler = joblib.load('scaler.pkl')
+        else:
+            raise FileNotFoundError("标准化器文件未找到")
 
-        with open('scaler.pkl', 'rb') as f:
-            scaler = pickle.load(f)
-
+        model.eval()  # 设置为评估模式
         return model, scaler
+
     except Exception as e:
-        st.error(f"加载模型失败: {str(e)}")
+        st.error(f"加载失败: {str(e)}")
         st.stop()
 
 
@@ -95,11 +119,11 @@ def load_team_mapping():
 
 
 # ============================================
-# 预测函数
+# 预测函数（修改核心预测逻辑）
 # ============================================
 
 def predict_match(team1_abbr, team2_abbr, map_name, model, scaler, teams_data):
-    """预测比赛结果"""
+    """使用PyTorch模型进行预测"""
     try:
         team1 = teams_data[team1_abbr]
         team2 = teams_data[team2_abbr]
@@ -108,37 +132,34 @@ def predict_match(team1_abbr, team2_abbr, map_name, model, scaler, teams_data):
         all_ratings = [t.get("avg_rating", 0) for t in teams_data.values()]
         global_avg_rating = np.mean(all_ratings) if all_ratings else 0
 
-        # 特征工程
+        # 特征工程（保持与训练时一致）
         DEFAULT_WIN_RATE = 0.5
 
-        # 基础特征
+        # 生成三个特征
         map_diff = (
                 team1["map_win_rate"].get(map_name, DEFAULT_WIN_RATE) -
                 team2["map_win_rate"].get(map_name, DEFAULT_WIN_RATE)
         )
 
-        # 队伍评分特征
         t1_rating = team1.get("avg_rating", global_avg_rating)
         t2_rating = team2.get("avg_rating", global_avg_rating)
         rating_diff = t1_rating - t2_rating
 
-        # 全局评分等级特征
-        t1_rating_level = t1_rating - global_avg_rating
-        t2_rating_level = t2_rating - global_avg_rating
-        rating_level_diff = t1_rating_level - t2_rating_level
-
-        # 地图稳定性特征
         t1_rates = list(team1["map_win_rate"].values()) or [DEFAULT_WIN_RATE]
         t2_rates = list(team2["map_win_rate"].values()) or [DEFAULT_WIN_RATE]
         map_stability_diff = np.std(t1_rates) - np.std(t2_rates)
 
-        features = [rating_diff, map_diff, rating_level_diff, map_stability_diff]
+        features = [rating_diff, map_diff, map_stability_diff]
 
         # 特征标准化
         features_scaled = scaler.transform([features])
 
-        # 预测
-        prob = model.predict_proba(features_scaled)[0][1]
+        # 转换为PyTorch张量
+        features_tensor = torch.tensor(features_scaled, dtype=torch.float32)
+
+        # 模型预测
+        with torch.no_grad():
+            prob = model(features_tensor).item()
 
         return {
             "team1": team1_abbr,
@@ -149,7 +170,6 @@ def predict_match(team1_abbr, team2_abbr, map_name, model, scaler, teams_data):
         }
     except Exception as e:
         return {"error": f"预测失败: {str(e)}"}
-
 
 # ============================================
 # 应用配置
@@ -231,7 +251,6 @@ st.markdown("""
 
 def main():
     """主应用函数"""
-
     # 初始化session state
     if "page" not in st.session_state:
         st.session_state.page = "home"
@@ -241,11 +260,9 @@ def main():
     teams_data = load_teams_data()
     team_mapping = load_team_mapping()
 
-    # 主页
+    # 页面路由
     if st.session_state.page == "home":
         show_home_page(model, scaler, teams_data)
-
-    # 预测结果页
     elif st.session_state.page == "prediction":
         show_prediction_page(model, scaler, teams_data)
 
